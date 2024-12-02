@@ -2,7 +2,7 @@
 
 # 서버 아키텍처
 
-![[CollaB_Server_Architecture.png]]
+![서버 아키텍처](./CollaB_Server_Architecture.png)
 
 - - - - -   
 
