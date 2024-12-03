@@ -209,83 +209,63 @@ CollaB는 이러한 문제를 해결하기 위해 기획되었습니다. **프�
 
 ## 📱 실행 화면
 
-<div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
-  <!-- 시작 화면 -->
-  <div>
-   <h3>시작 화면</h3>
-    <img src="./assets/시작화면.gif" alt="Main Screen GIF" height="200">
-  </div>
+<table>
+  <tr>
+    <td align="center">
+      <h3>시작 화면</h3>
+      <img src="./assets/시작화면.gif" alt="Main Screen GIF" height="200">
+    </td>
+    <td align="center">
+      <h3>회원가입 온보딩</h3>
+      <img src="./assets/회원가입.gif" alt="Project Matching GIF" height="200">
+    </td>
+    <td align="center">
+      <h3>자동 로그인</h3>
+      <img src="./assets/로그인.gif" alt="Chat Screen GIF" height="200">
+    </td>
+    <td align="center">
+      <h3>최초 온보딩, 코딩테스트</h3>
+      <img src="./assets/최초 온보딩.gif" alt="Extra Screen GIF" height="200">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <h3>홈 화면</h3>
+      <img src="./assets/홈화면2.gif" alt="Main Screen GIF" height="200">
+    </td>
+    <td align="center">
+      <h3>프로젝트 시작</h3>
+      <img src="./assets/프로젝트 전개.gif" alt="Project Matching GIF" height="200">
+    </td>
+    <td align="center">
+      <h3>팀원 구하기(매칭)</h3>
+      <img src="./assets/매칭.gif" alt="Chat Screen GIF" height="200">
+    </td>
+    <td align="center">
+      <h3>팀원 요청을 받는 사람</h3>
+      <img src="./assets/매칭 당하는사람.gif" alt="Extra Screen GIF" height="200">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <h3>프로젝트 찾기 및 요청</h3>
+      <img src="./assets/프로젝트 찾고참여 요청.gif" alt="Main Screen GIF" height="200">
+    </td>
+    <td align="center">
+      <h3>친구 추가, 채팅방 초대</h3>
+      <img src="./assets/친구추가.gif" alt="Project Matching GIF" height="200">
+    </td>
+    <td align="center">
+      <h3>실시간 채팅 팀원 1</h3>
+      <img src="./assets/사용자1 실시간채팅.gif" alt="Chat Screen GIF" height="200">
+    </td>
+    <td align="center">
+      <h3>실시간 채팅 팀원 2</h3>
+      <img src="./assets/사용자2 실시간채팅.gif" alt="Extra Screen GIF" height="200">
+    </td>
+  </tr>
+</table>
 
-  <!-- 회원가입 온보딩 -->
-  <div>
-    <h3>회원가입 온보딩</h3>
-    <img src="./assets/회원가입.gif" alt="Project Matching GIF" height="200">
-  </div>
-
-  <!-- 로그인 -->
-  <div>
-    <h3>자동 로그인</h3>
-    <img src="./assets/로그인.gif" alt="Chat Screen GIF" height="200">
-  </div>
-
-  <!-- 첫 로그인 -->
-  <div>
-    <h3>최초 온보딩, 코딩테스트</h3>
-    <img src="./assets/최초 온보딩.gif" alt="Extra Screen GIF" height="200">
-  </div>
-</div>
-
-<div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
-  <!-- 홈 화면-->
-  <div>
-   <h3>홈 화면</h3>
-    <img src="./assets/홈화면2.gif" alt="Main Screen GIF" height="200">
-  </div>
-
-  <!-- 프로젝트 시작 -->
-  <div>
-    <h3>프로젝트 시작</h3>
-    <img src="./assets/프로젝트 전개.gif" alt="Project Matching GIF" height="200">
-  </div>
-
-  <!-- 팀원 매칭 -->
-  <div>
-    <h3>팀원 구하기(매칭)</h3>
-    <img src="./assets/매칭.gif" alt="Chat Screen GIF" height="200">
-  </div>
-
-  <!-- 요청받기 -->
-  <div>
-    <h3>팀원 요청을 받는 사람</h3>
-    <img src="./assets/매칭 당하는사람.gif" alt="Extra Screen GIF" height="200">
-  </div>
-</div>
-
-<div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
-  <!-- 프로젝트 찾기-->
-  <div>
-   <h3>프로젝트 찾기 및 요청</h3>
-    <img src="./assets/프로젝트 찾고참여 요청.gif" alt="Main Screen GIF" height="200">
-  </div>
-
-  <!-- 친구관리 -->
-  <div>
-    <h3>친구 추가, 채팅방 초대</h3>
-    <img src="./assets/친구추가.gif" alt="Project Matching GIF" height="200">
-  </div>
-
-  <!-- 실시간 채팅 -->
-  <div>
-    <h3>실시간 채팅 팀원 1</h3>
-    <img src="./assets/사용자1 실시간채팅.gif" alt="Chat Screen GIF" height="200">
-  </div>
-
-  <!-- 실시간 채팅 2 -->
-  <div>
-    <h3>실시간 채팅 팀원 2</h3>
-    <img src="./assets/사용자2 실시간채팅.gif" alt="Extra Screen GIF" height="200">
-  </div>
-</div>
 ---
 
 ## 🛠 설치 및 실행 방법
