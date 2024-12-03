@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/first_setting_nav"
+    app:startDestination="@id/firstSettingSplashFragment">
+
+    <fragment
+        android:id="@+id/firstSettingSplashFragment"
+        android:name="com.gmlab.team_benew.main.home.firstSetting.FirstSettingSplashFragment"
+        android:label="fragment_first_setting_splash"
+        tools:layout="@layout/fragment_first_setting_splash" >
+        <action
+            android:id="@+id/action_firstSettingSplashFragment_to_firstSettingViewPagerFragment"
+            app:destination="@id/firstSettingViewPagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstSettingViewPagerFragment"
+        android:name="com.gmlab.team_benew.main.home.firstSetting.FirstSettingViewPagerFragment"
+        android:label="fragment_first_setting_view_pager"
+        tools:layout="@layout/fragment_first_setting_view_pager" />
+</navigation>

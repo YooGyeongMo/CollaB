@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#3D72FF"/> <!-- 선택된 상태의 배경색 (파란색으로 설정) -->
+</shape>

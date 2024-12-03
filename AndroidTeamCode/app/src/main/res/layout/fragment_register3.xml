@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FCFC"
+    tools:context="com.gmlab.team_benew.auth.register.screens.Register3Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_thirdRegister_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:text="회원가입"
+            android:textColor="#585858"
+            android:textSize="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_thirdRegister_email"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/register_edit_text_background"
+            android:ems="17"
+            android:gravity="start|bottom"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:paddingBottom="15dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_thirdRegister_title" />
+
+        <TextView
+            android:id="@+id/tv_thirdRegister_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="6dp"
+            android:text="이메일"
+            android:textColor="#B4B4B4"
+            app:layout_constraintStart_toStartOf="@+id/et_thirdRegister_email"
+            app:layout_constraintTop_toTopOf="@+id/et_thirdRegister_email" />
+
+        <EditText
+            android:id="@+id/et_thirdRegister_authenticationNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="인증번호"
+            android:inputType="text"
+            android:text=""
+            android:textColor="#585858"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@+id/et_thirdRegister_email"
+            app:layout_constraintTop_toBottomOf="@+id/et_thirdRegister_email" />
+
+        <android.widget.Button
+            android:id="@+id/btn_thirdRegister_next"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/intro_login_button_background"
+            android:text="확인"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_thirdRegister_authenticationNumber" />
+
+        <android.widget.Button
+            android:id="@+id/btn_thirdRegister_emailAuth"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/intro_login_button_background"
+            android:text="인증"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/et_thirdRegister_email"
+            app:layout_constraintEnd_toEndOf="@+id/et_thirdRegister_email"
+            app:layout_constraintTop_toTopOf="@+id/et_thirdRegister_email" />
+
+        <android.widget.Button
+            android:id="@+id/btn_thirdRegister_authNumber"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            android:textColor="#FFFFFF"
+            android:background="#3D72FF"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/et_thirdRegister_authenticationNumber"
+            app:layout_constraintEnd_toEndOf="@+id/et_thirdRegister_authenticationNumber"
+            app:layout_constraintTop_toTopOf="@+id/et_thirdRegister_authenticationNumber" />
+
+        <TextView
+            android:id="@+id/tv_thirdRegister_authApiCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@+id/et_thirdRegister_authenticationNumber"
+            app:layout_constraintTop_toBottomOf="@+id/et_thirdRegister_authenticationNumber" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

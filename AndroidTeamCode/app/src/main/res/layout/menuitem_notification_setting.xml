@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/actionButtonStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:focusable="true">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/notification_bell" />
+
+    <ImageView
+        android:id="@+id/red_dot_notification"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_gravity="top|end"
+        android:layout_marginEnd="6dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/red_dot"
+        android:visibility="gone" >
+
+    </ImageView>
+
+</FrameLayout>

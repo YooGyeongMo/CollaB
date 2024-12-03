@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/selector_home_icon"
+        android:title="@string/label_home_icon"/>
+    <item
+        android:id="@+id/navigation_mypage"
+        android:icon="@drawable/selector_mypage_icon"
+        android:title="@string/label_mypage_icon"/>
+    <item
+        android:id="@+id/navigation_intro_matching"
+        android:icon="@drawable/selector_matching_icon"
+        android:title="매칭"/>
+    <item
+        android:id="@+id/navigation_project_list"
+        android:icon="@drawable/selector_myteam_icon"
+        android:title="@string/label_myteam_icon"/>
+    <item
+        android:id="@+id/navigation_setting"
+        android:icon="@drawable/selector_setting_icon"
+        android:title="@string/label_setting_icon"/>
+
+</menu>

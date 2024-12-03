@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_myPage_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:text="마이페이지"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_mypage_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#E8E8FA"
+                app:cardCornerRadius="60dp"
+                app:cardElevation="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_myPage_welcome">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgv_mypage_picture"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="24dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/draw_profilecard_picture"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/profilecard_detail_default" />
+
+                    <TextView
+                        android:id="@+id/tv_mypage_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/draw_profilecard_detail_textbox"
+                        android:gravity="start|center_vertical"
+                        android:hint="이름"
+                        android:inputType="text"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toEndOf="@+id/imgv_mypage_picture"
+                        app:layout_constraintTop_toTopOf="@+id/imgv_mypage_picture" />
+
+                    <TextView
+                        android:id="@+id/tv_mypage_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/draw_profilecard_detail_textbox"
+                        android:gravity="start|center_vertical"
+                        android:hint="닉네임"
+                        android:inputType="text"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="@+id/tv_mypage_name"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_mypage_name" />
+
+                    <View
+                        android:id="@+id/view_mypage_email"
+                        android:layout_width="0dp"
+                        android:layout_height="4dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_mypage_account" />
+
+                    <View
+                        android:id="@+id/view_mypage_phone2"
+                        android:layout_width="0dp"
+                        android:layout_height="4dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imgv_mypage_picture" />
+
+                    <View
+                        android:id="@+id/view_mypage_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="4dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btn_mypage_email" />
+
+                    <View
+                        android:id="@+id/view_mypage_Major"
+                        android:layout_width="0dp"
+                        android:layout_height="4dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btn_mypage_phoneNumber" />
+
+                    <View
+                        android:id="@+id/view_mypage_birthday"
+                        android:layout_width="0dp"
+                        android:layout_height="4dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btn_mypage_major" />
+
+                    <TextView
+                        android:id="@+id/tv_mypage_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="이메일"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="@+id/view_mypage_email"
+                        app:layout_constraintTop_toBottomOf="@+id/view_mypage_email" />
+
+                    <EditText
+                        android:id="@+id/et_mypage_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/draw_profilecard_detail_textbox"
+                        android:gravity="start|center_vertical"
+                        android:hint="이메일"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/tv_mypage_email"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_mypage_email" />
+
+                    <android.widget.Button
+                        android:id="@+id/btn_mypage_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:background="#00000000"
+                        android:text="변경"
+                        app:layout_constraintBottom_toBottomOf="@+id/et_mypage_email"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/et_mypage_email" />
+
+                    <TextView
+                        android:id="@+id/tv_mypage_phoneNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="핸드폰 번호"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="@+id/view_mypage_phone"
+                        app:layout_constraintTop_toBottomOf="@+id/view_mypage_phone" />
+
+                    <EditText
+                        android:id="@+id/et_mypage_phoneNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/draw_profilecard_detail_textbox"
+                        android:gravity="start|center_vertical"
+                        android:hint="핸드폰 번호"
+                        android:inputType="phone"
+                        android:maxLength="13"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/tv_mypage_phoneNumber"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_mypage_phoneNumber" />
+
+                    <android.widget.Button
+                        android:id="@+id/btn_mypage_phoneNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:background="#00000000"
+                        android:text="변경"
+                        app:layout_constraintBottom_toBottomOf="@+id/et_mypage_phoneNumber"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/et_mypage_phoneNumber" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="컴퓨터관련 전공유무"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="@+id/view_mypage_Major"
+                        app:layout_constraintTop_toBottomOf="@+id/view_mypage_Major" />
+
+                    <Spinner
+                        android:id="@+id/spn_mypage_major"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:entries="@array/mypage_major"
+                        android:background="@drawable/draw_profilecard_detail_textbox"
+                        android:gravity="start|center_vertical"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        app:layout_constraintStart_toStartOf="@+id/textView5"
+                        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                    <android.widget.Button
+                        android:id="@+id/btn_mypage_major"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:background="#00000000"
+                        android:text="변경"
+                        app:layout_constraintBottom_toBottomOf="@+id/spn_mypage_major"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/spn_mypage_major" />
+
+                    <TextView
+                        android:id="@+id/tv_mypage_accountLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="아이디"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="@+id/view_mypage_phone2"
+                        app:layout_constraintTop_toBottomOf="@+id/view_mypage_phone2" />
+
+                    <TextView
+                        android:id="@+id/tv_mypage_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="아이디"
+                        android:background="@drawable/draw_profilecard_detail_textbox"
+                        android:gravity="start|center_vertical"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/tv_mypage_accountLabel"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_mypage_accountLabel" />
+
+                    <TextView
+                        android:id="@+id/tv_gender_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:text="성별 : "
+                        app:layout_constraintStart_toStartOf="@+id/tv_mypage_nickname"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_mypage_nickname" />
+
+                    <TextView
+                        android:id="@+id/tv_mypage_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="성별"
+                        app:layout_constraintBottom_toBottomOf="@+id/tv_gender_label"
+                        app:layout_constraintStart_toEndOf="@+id/tv_gender_label"
+                        app:layout_constraintTop_toTopOf="@+id/tv_gender_label" />
+
+                    <TextView
+                        android:id="@+id/tv_mypage_birthdayLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="생년월일"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="@+id/view_mypage_birthday"
+                        app:layout_constraintTop_toBottomOf="@+id/view_mypage_birthday" />
+
+                    <TextView
+                        android:id="@+id/tv_mypage_birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="32dp"
+                        android:hint="생년월일"
+                        android:textSize="18sp"
+                        android:background="@drawable/draw_profilecard_detail_textbox"
+                        android:gravity="start|center_vertical"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/tv_mypage_birthdayLabel"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_mypage_birthdayLabel"
+                        app:layout_constraintVertical_bias="0.0" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

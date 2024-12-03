@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode="adjustResize"
+    tools:context=".test.CodingTest2Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_codingTest2_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="문제 1 : 다음 코드의 출력 결과는 무엇인가요?"
+            app:layout_constraintStart_toStartOf="@+id/imgv_codingTest2_logoc"
+            app:layout_constraintTop_toBottomOf="@+id/view_codingTest3_1" />
+
+        <View
+            android:id="@+id/view_codingTest3_1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="#3D72FF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgv_codingTest2_logoc" />
+
+        <ImageView
+            android:id="@+id/imgv_codingTest2_logoc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/c_img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgv_codingTest3_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/c_easy"
+            app:layout_constraintStart_toStartOf="@+id/tv_codingTest2_title1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_codingTest2_title1" />
+
+        <RadioGroup
+            android:id="@+id/rag_codingTest3_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/imgv_codingTest3_1"
+            app:layout_constraintTop_toBottomOf="@+id/imgv_codingTest3_1">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rab_codingTest3_1_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainBlue2"
+                android:text="15" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rab_codingTest3_1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainBlue2"
+                android:text="10" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rab_codingTest3_1_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainBlue2"
+                android:text="5" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rab_codingTest3_1_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/mainBlue2"
+                android:text="0" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_codingTest2_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="문제 2: 다음 코드에서 오류가 발생하는 이유는 무엇인가요?"
+            app:layout_constraintStart_toStartOf="@+id/rag_codingTest3_1"
+            app:layout_constraintTop_toBottomOf="@+id/rag_codingTest3_1" />
+
+        <ImageView
+            android:id="@+id/imgv_codingTest3_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/c_middle"
+            app:layout_constraintStart_toStartOf="@+id/tv_codingTest2_title2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_codingTest2_title2" />
+
+        <RadioGroup
+            android:id="@+id/rag_codingTest3_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/imgv_codingTest3_2"
+            app:layout_constraintTop_toBottomOf="@+id/imgv_codingTest3_2">
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_2_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="printHello 함수가 정의되지 않아서" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_2_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="printf 함수가 정의되지 않아서" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_2_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="printHello 함수 호출에서 괄호가 빠져서" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_2_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="main 함수가 정의되지 않아서" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_codingTest2_title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="문제 3: 다음 코드의 출력 결과는 무엇인가요?"
+            app:layout_constraintStart_toStartOf="@+id/rag_codingTest3_2"
+            app:layout_constraintTop_toBottomOf="@+id/rag_codingTest3_2" />
+
+        <ImageView
+            android:id="@+id/imgv_codingTest3_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/c_hard"
+            app:layout_constraintStart_toStartOf="@+id/tv_codingTest2_title3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_codingTest2_title3" />
+
+        <RadioGroup
+            android:id="@+id/rag_codingTest3_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/imgv_codingTest3_3"
+            app:layout_constraintTop_toBottomOf="@+id/imgv_codingTest3_3">
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_3_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_3_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="20" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_3_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="컴파일 오류" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_3_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_codingTest2_title4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="문제 4: 다음 코드의 출력 결과는 무엇인가요?"
+            app:layout_constraintStart_toStartOf="@+id/rag_codingTest3_3"
+            app:layout_constraintTop_toBottomOf="@+id/rag_codingTest3_3" />
+
+        <ImageView
+            android:id="@+id/imgv_codingTest3_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/c_hard2"
+            app:layout_constraintStart_toStartOf="@+id/tv_codingTest2_title4"
+            app:layout_constraintTop_toBottomOf="@+id/tv_codingTest2_title4" />
+
+        <RadioGroup
+            android:id="@+id/rag_codingTest3_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/imgv_codingTest3_4"
+            app:layout_constraintTop_toBottomOf="@+id/imgv_codingTest3_4">
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_4_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10 4" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_4_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3 20" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_4_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10 20" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_4_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3 4" />
+        </RadioGroup>
+
+        <View
+            android:id="@+id/view_codingTest3_2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="#3D72FF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgv_codingTest2_logocplus" />
+
+        <ImageView
+            android:id="@+id/imgv_codingTest2_logocplus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/cplus_img"
+            app:layout_constraintStart_toStartOf="@+id/rag_codingTest3_4"
+            app:layout_constraintTop_toBottomOf="@+id/rag_codingTest3_4" />
+
+        <TextView
+            android:id="@+id/tv_codingTest2_title5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="문제 5: 다음 코드의 출력 결과는 무엇인가요? "
+            app:layout_constraintStart_toStartOf="@+id/imgv_codingTest2_logocplus"
+            app:layout_constraintTop_toBottomOf="@+id/view_codingTest3_2" />
+
+        <ImageView
+            android:id="@+id/imgv_codingTest3_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/cplus_easy"
+            app:layout_constraintStart_toStartOf="@+id/tv_codingTest2_title5"
+            app:layout_constraintTop_toBottomOf="@+id/tv_codingTest2_title5" />
+
+        <RadioGroup
+            android:id="@+id/rag_codingTest3_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/imgv_codingTest3_5"
+            app:layout_constraintTop_toBottomOf="@+id/imgv_codingTest3_5">
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_5_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_5_2"
+                android:layout_width="61dp"
+                android:layout_height="wrap_content"
+                android:text="15" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_5_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_5_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_codingTest2_title6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="문제 6: 다음 코드에서 오류가 발생하는 이유는 무엇인가요?"
+            app:layout_constraintStart_toStartOf="@+id/rag_codingTest3_5"
+            app:layout_constraintTop_toBottomOf="@+id/rag_codingTest3_5" />
+
+        <ImageView
+            android:id="@+id/imgv_codingTest3_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/cplus_middle"
+            app:layout_constraintStart_toStartOf="@+id/tv_codingTest2_title6"
+            app:layout_constraintTop_toBottomOf="@+id/tv_codingTest2_title6" />
+
+        <RadioGroup
+            android:id="@+id/rag_codingTest3_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/imgv_codingTest3_6"
+            app:layout_constraintTop_toBottomOf="@+id/imgv_codingTest3_6">
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_6_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="displayMessage 함수가 정의되지 않아서" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_6_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="std::cout 객체가 정의되지 않아서" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_6_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="displayMessage 함수 호출에서 괄호가 빠져서" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_6_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="main 함수가 정의되지 않아서" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_codingTest2_title7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="문제 7: 다음 코드의 출력 결과는 무엇인가요?"
+            app:layout_constraintStart_toStartOf="@+id/rag_codingTest3_6"
+            app:layout_constraintTop_toBottomOf="@+id/rag_codingTest3_6" />
+
+        <ImageView
+            android:id="@+id/imgv_codingTest3_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/cplus_hard"
+            app:layout_constraintStart_toStartOf="@+id/tv_codingTest2_title7"
+            app:layout_constraintTop_toBottomOf="@+id/tv_codingTest2_title7" />
+
+        <RadioGroup
+            android:id="@+id/rag_codingTest3_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/imgv_codingTest3_7"
+            app:layout_constraintTop_toBottomOf="@+id/imgv_codingTest3_7">
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_7_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 4 6 8" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_7_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 2 3 4" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_7_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 4 3 4" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_7_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 4 6 8" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_codingTest2_title8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="문제 8: 다음 코드의 출력 결과는 무엇인가요?"
+            app:layout_constraintStart_toStartOf="@+id/rag_codingTest3_7"
+            app:layout_constraintTop_toBottomOf="@+id/rag_codingTest3_7" />
+
+        <ImageView
+            android:id="@+id/imgv_codingTest3_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/cplus_hard2"
+            app:layout_constraintStart_toStartOf="@+id/tv_codingTest2_title8"
+            app:layout_constraintTop_toBottomOf="@+id/tv_codingTest2_title8" />
+
+        <RadioGroup
+            android:id="@+id/rag_codingTest3_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/imgv_codingTest3_8"
+            app:layout_constraintTop_toBottomOf="@+id/imgv_codingTest3_8">
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_8_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Base class\nBase class" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_8_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Derived class\nDerived class" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_8_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Base class\nDerived class" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_8_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Derived class\nBase class" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imgv_codingTest2_logjava"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/java_img"
+            app:layout_constraintStart_toStartOf="@+id/rag_codingTest3_8"
+            app:layout_constraintTop_toBottomOf="@+id/rag_codingTest3_8" />
+
+        <TextView
+            android:id="@+id/tv_codingTest2_title9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="문제 9: 다음 코드의 출력 결과는 무엇인가요?"
+            app:layout_constraintStart_toStartOf="@+id/imgv_codingTest2_logjava"
+            app:layout_constraintTop_toBottomOf="@+id/view_codingTest3_3" />
+
+        <View
+            android:id="@+id/view_codingTest3_3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="#3D72FF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgv_codingTest2_logjava" />
+
+        <ImageView
+            android:id="@+id/imgv_codingTest3_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/java_easy"
+            app:layout_constraintStart_toStartOf="@+id/tv_codingTest2_title9"
+            app:layout_constraintTop_toBottomOf="@+id/tv_codingTest2_title9" />
+
+        <RadioGroup
+            android:id="@+id/rag_codingTest3_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/imgv_codingTest3_9"
+            app:layout_constraintTop_toBottomOf="@+id/imgv_codingTest3_9">
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_9_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_9_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_9_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_9_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_codingTest2_title10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="문제 10: 다음 코드에서 출력 결과는 무엇인가요?"
+            app:layout_constraintStart_toStartOf="@+id/rag_codingTest3_9"
+            app:layout_constraintTop_toBottomOf="@+id/rag_codingTest3_9" />
+
+        <ImageView
+            android:id="@+id/imgv_codingTest3_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/java_middle"
+            app:layout_constraintStart_toStartOf="@+id/tv_codingTest2_title10"
+            app:layout_constraintTop_toBottomOf="@+id/tv_codingTest2_title10" />
+
+        <RadioGroup
+            android:id="@+id/rag_codingTest3_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/imgv_codingTest3_10"
+            app:layout_constraintTop_toBottomOf="@+id/imgv_codingTest3_10">
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_10_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="true true" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_10_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="false true" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_10_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="true false" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_10_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="false false" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_codingTest2_title11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="문제 11: 다음 코드의 출력 결과는 무엇인가요?"
+            app:layout_constraintStart_toStartOf="@+id/rag_codingTest3_10"
+            app:layout_constraintTop_toBottomOf="@+id/rag_codingTest3_10" />
+
+        <ImageView
+            android:id="@+id/imgv_codingTest3_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/java_hard"
+            app:layout_constraintStart_toStartOf="@+id/tv_codingTest2_title11"
+            app:layout_constraintTop_toBottomOf="@+id/tv_codingTest2_title11" />
+
+        <RadioGroup
+            android:id="@+id/rag_codingTest3_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/imgv_codingTest3_11"
+            app:layout_constraintTop_toBottomOf="@+id/imgv_codingTest3_11">
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_11_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Base class" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_11_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Derived class" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_11_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="컴파일 오류" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_11_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="실행 오류" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_codingTest2_title12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="문제 12: 다음 코드의 출력 결과는 무엇인가요?"
+            app:layout_constraintStart_toStartOf="@+id/rag_codingTest3_11"
+            app:layout_constraintTop_toBottomOf="@+id/rag_codingTest3_11" />
+
+        <ImageView
+            android:id="@+id/imgv_codingTest3_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/java_hard2"
+            app:layout_constraintStart_toStartOf="@+id/tv_codingTest2_title12"
+            app:layout_constraintTop_toBottomOf="@+id/tv_codingTest2_title12" />
+
+        <RadioGroup
+            android:id="@+id/rag_codingTest3_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/imgv_codingTest3_12"
+            app:layout_constraintTop_toBottomOf="@+id/imgv_codingTest3_12">
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_12_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10"
+                tools:layout_editor_absoluteX="363dp"
+                tools:layout_editor_absoluteY="7021dp" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_12_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_12_3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Arithmetic Exception" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_12_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="컴파일 오류" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imgv_codingTest2_logopython"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/python_img"
+            app:layout_constraintStart_toStartOf="@+id/rag_codingTest3_12"
+            app:layout_constraintTop_toBottomOf="@+id/rag_codingTest3_12" />
+
+        <TextView
+            android:id="@+id/tv_codingTest2_title13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="문제 13: 다음 코드의 출력 결과는 무엇인가요?"
+            app:layout_constraintStart_toStartOf="@+id/view_codingTest3_4"
+            app:layout_constraintTop_toBottomOf="@+id/view_codingTest3_4" />
+
+        <View
+            android:id="@+id/view_codingTest3_4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="#3D72FF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgv_codingTest2_logopython" />
+
+        <ImageView
+            android:id="@+id/imgv_codingTest3_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/python_easy"
+            app:layout_constraintStart_toStartOf="@+id/tv_codingTest2_title13"
+            app:layout_constraintTop_toBottomOf="@+id/tv_codingTest2_title13" />
+
+        <RadioGroup
+            android:id="@+id/rag_codingTest3_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/imgv_codingTest3_13"
+            app:layout_constraintTop_toBottomOf="@+id/imgv_codingTest3_13">
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_13_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_13_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_13_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_13_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_codingTest2_title14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="문제 14: 다음 코드의 출력 결과는 무엇인가요?"
+            app:layout_constraintStart_toStartOf="@+id/rag_codingTest3_13"
+            app:layout_constraintTop_toBottomOf="@+id/rag_codingTest3_13" />
+
+        <ImageView
+            android:id="@+id/imgv_codingTest3_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/python_middle"
+            app:layout_constraintStart_toStartOf="@+id/tv_codingTest2_title14"
+            app:layout_constraintTop_toBottomOf="@+id/tv_codingTest2_title14" />
+
+        <RadioGroup
+            android:id="@+id/rag_codingTest3_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/imgv_codingTest3_14"
+            app:layout_constraintTop_toBottomOf="@+id/imgv_codingTest3_14">
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_14_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="True True" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_14_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="False True" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_14_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="True False" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_14_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="False False" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_codingTest2_title15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="문제 15: 다음 코드의 출력 결과는 무엇인가요? "
+            app:layout_constraintStart_toStartOf="@+id/rag_codingTest3_14"
+            app:layout_constraintTop_toBottomOf="@+id/rag_codingTest3_14" />
+
+        <ImageView
+            android:id="@+id/imgv_codingTest3_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/python_hard"
+            app:layout_constraintStart_toStartOf="@+id/tv_codingTest2_title15"
+            app:layout_constraintTop_toBottomOf="@+id/tv_codingTest2_title15" />
+
+        <RadioGroup
+            android:id="@+id/rag_codingTest3_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/imgv_codingTest3_15"
+            app:layout_constraintTop_toBottomOf="@+id/imgv_codingTest3_15">
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_15_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Base class" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_15_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Derived class" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_15_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="컴파일 오류" />
+
+            <RadioButton
+                android:id="@+id/rab_codingTest3_15_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="실행 오류" />
+        </RadioGroup>
+
+        <android.widget.Button
+            android:id="@+id/btn_codingTest2_next"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="제출"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/intro_login_button_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rag_codingTest3_15" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

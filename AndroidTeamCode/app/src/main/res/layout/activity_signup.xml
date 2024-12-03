@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_signup_title"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splashlogotxt"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_signup_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="저희와 함께 시작해봅시다."
+        android:textColor="@color/VeryDarkBlue"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/iv_signup_title"
+        app:layout_constraintStart_toStartOf="@id/iv_signup_title"
+        app:layout_constraintTop_toBottomOf="@id/iv_signup_title" />
+
+    <TextView
+        android:id="@+id/tv_signup_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textColor="@color/VeryDarkBlue"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/tv_signup_subtitle"
+        app:layout_constraintStart_toStartOf="@id/tv_signup_subtitle"
+        app:layout_constraintTop_toBottomOf="@id/tv_signup_subtitle"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_signup_id"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:hint="아이디를 입력하세요"
+        android:padding="2dp"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="@id/tv_signup_notice"
+        app:layout_constraintStart_toStartOf="@id/tv_signup_notice"
+        app:layout_constraintTop_toBottomOf="@id/tv_signup_notice"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        app:boxBackgroundColor="@color/lGreen"
+        app:boxStrokeColor="@color/gray"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="1dp"
+        app:hintTextColor="@color/gray">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tet_signup_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_signup_pw"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:hint="비밀번호를 입력하세요"
+        android:padding="2dp"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="@id/ti_signup_id"
+        app:layout_constraintStart_toStartOf="@id/ti_signup_id"
+        app:layout_constraintTop_toBottomOf="@id/ti_signup_id"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        app:boxBackgroundColor="@color/lGreen"
+        app:boxStrokeColor="@color/gray"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="1dp"
+        app:hintTextColor="@color/gray">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tet_signup_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_signup_pw_recheck"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:hint="비밀번호 재확인"
+        android:padding="2dp"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="@id/ti_signup_pw"
+        app:layout_constraintStart_toStartOf="@id/ti_signup_pw"
+        app:layout_constraintTop_toBottomOf="@id/ti_signup_pw"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        app:boxBackgroundColor="@color/lGreen"
+        app:boxStrokeColor="@color/gray"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="1dp"
+        app:hintTextColor="@color/gray">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tet_signup_pw_recheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_signup_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:hint="이름"
+        android:padding="2dp"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="@id/ti_signup_pw_recheck"
+        app:layout_constraintStart_toStartOf="@id/ti_signup_pw_recheck"
+        app:layout_constraintTop_toBottomOf="@id/ti_signup_pw_recheck"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        app:boxBackgroundColor="@color/lGreen"
+        app:boxStrokeColor="@color/gray"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="1dp"
+        app:hintTextColor="@color/gray">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tet_signup_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_register_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:backgroundTint="@color/mainBlue"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/ti_signup_name"
+        android:layout_marginTop="60dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

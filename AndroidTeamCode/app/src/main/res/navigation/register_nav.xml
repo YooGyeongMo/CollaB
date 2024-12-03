@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/registerSplashFragment">
+    <fragment
+        android:id="@+id/registerSplashFragment"
+        android:name="com.gmlab.team_benew.auth.register.RegisterSplashFragment"
+        android:label="fragment_register_splash"
+        tools:layout="@layout/fragment_register_splash" >
+        <action
+            android:id="@+id/action_registerSplashFragment_to_registerViewPagerFragment"
+            app:destination="@id/registerViewPagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerViewPagerFragment"
+        android:name="com.gmlab.team_benew.auth.register.RegisterViewPagerFragment"
+        android:label="fragment_register_view_pager"
+        tools:layout="@layout/fragment_register_view_pager" />
+</navigation>

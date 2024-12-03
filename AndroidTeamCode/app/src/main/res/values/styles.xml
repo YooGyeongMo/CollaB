@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <style name ="TextSubtitle1" parent ="TextAppearance.MaterialComponents.Subtitle1">
+        <item name ="android:textColor">@color/white</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+    <style name ="Progressbar_color_under_api21">
+        <item name="colorAccent">@color/mainBlue2</item>
+    </style>
+
+    <!-- 로그아웃 팝업창 -->
+    <style name="LogoutPopupDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">80%</item>
+        <item name="android:windowMinWidthMinor">80%</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomSpinnerStyle">
+        <item name="android:background">@drawable/modal_spinner_background</item>
+    </style>
+
+</resources>

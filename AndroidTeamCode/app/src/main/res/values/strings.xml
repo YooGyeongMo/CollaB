@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CollaB</string>
+    <string name="label_home_icon">홈</string>
+    <string name="label_mypage_icon">마이페이지</string>
+    <string name="label_matching_icon">매칭</string>
+    <string name="label_myteam_icon">프로젝트</string>
+    <string name="label_setting_icon">설정</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="join"><u>회원가입</u></string>
+    <string name="login"><u>로그인</u></string>
+</resources>

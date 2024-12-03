@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".test.CodingTest3Fragment">
+
+
+    <TextView
+        android:id="@+id/tv_codingTest_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수고하셨습니다!"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_codingTest_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.77" />
+
+    <TextView
+        android:id="@+id/tv_codingTest_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:textSize="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_codingTest_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:textSize="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_codingTest_2"
+        app:layout_constraintStart_toEndOf="@+id/tv_codingTest_2"
+        app:layout_constraintTop_toTopOf="@+id/tv_codingTest_2" />
+
+    <TextView
+        android:id="@+id/tv_codingTest3_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:textColor="@color/mainBlue2"
+        android:textSize="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_codingTest_2"
+        app:layout_constraintEnd_toStartOf="@+id/tv_codingTest_2"
+        app:layout_constraintTop_toTopOf="@+id/tv_codingTest_2" />
+
+    <TextView
+        android:id="@+id/tv_codingTest_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="점수"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_codingTest3_score"
+        app:layout_constraintEnd_toStartOf="@+id/tv_codingTest3_score" />
+
+    <android.widget.Button
+        android:id="@+id/btn_codingTest3_next"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/intro_login_button_background"
+        android:text="확인"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_codingTest_2"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <ImageView
+        android:id="@+id/imgb_codingTest3_logo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/new_logo"
+        app:layout_constraintBottom_toTopOf="@+id/tv_codingTest_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

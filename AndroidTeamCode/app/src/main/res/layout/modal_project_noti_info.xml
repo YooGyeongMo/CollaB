@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/project_detail_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_project_noti_title_name_of_detail_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_project_noti_title_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="상세 프로젝트 이름"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_project_noti_kind_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="캡스톤 / 앱 개발"
+        android:textColor="@color/mainFont2"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/cl_project_noti_title_name_of_detail_border"
+        app:layout_constraintTop_toBottomOf="@id/cl_project_noti_title_name_of_detail_border" />
+
+
+    <TextView
+        android:id="@+id/tv_project_noti_team_member_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="팀원 수"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_project_noti_kind_data"
+        app:layout_constraintTop_toBottomOf="@id/tv_project_noti_kind_data" />
+
+    <TextView
+        android:id="@+id/tv_project_noti_team_member_count_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="1명"
+        android:textColor="@color/mainFont2"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/tv_project_noti_team_member_count"
+        app:layout_constraintTop_toBottomOf="@id/tv_project_noti_team_member_count" />
+
+    <TextView
+        android:id="@+id/tv_project_noti_summary_introduction_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="프로젝트 요약"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_project_noti_team_member_count_data"
+        app:layout_constraintTop_toBottomOf="@id/tv_project_noti_team_member_count_data" />
+
+    <TextView
+        android:id="@+id/tv_project_noti_summary_introduction_info_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="프로젝트 요약"
+        android:textColor="@color/mainFont2"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/tv_project_noti_summary_introduction_info"
+        app:layout_constraintTop_toBottomOf="@id/tv_project_noti_summary_introduction_info" />
+
+    <ProgressBar
+        android:id="@+id/project_noti_loading_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/Progressbar_color_under_api21"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_project_noti_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="닫기"
+        android:backgroundTint="@color/mainBlue2"
+        app:layout_constraintTop_toBottomOf="@id/tv_project_noti_summary_introduction_info_data"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

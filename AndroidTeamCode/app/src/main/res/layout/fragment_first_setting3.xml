@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.home.firstSetting.FirstSetting3Fragment">
+
+
+    <TextView
+        android:id="@+id/tv_firstSetting3_introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="기본적인 코딩 테스트가\n준비되어 있습니다."
+        android:textColor="#585858"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgv_firstSetting3_c"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/c_img"
+        app:layout_constraintBottom_toTopOf="@+id/imgv_firstSetting3_java"
+        app:layout_constraintEnd_toStartOf="@+id/imgv_firstSetting3_cplus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_firstSetting3_introduce" />
+
+    <ImageView
+        android:id="@+id/imgv_firstSetting3_cplus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/cplus_img"
+        app:layout_constraintBottom_toTopOf="@+id/img_firstSetting3_python"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgv_firstSetting3_c"
+        app:layout_constraintTop_toTopOf="@+id/imgv_firstSetting3_c" />
+
+    <ImageView
+        android:id="@+id/imgv_firstSetting3_java"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/java_img"
+        app:layout_constraintBottom_toTopOf="@+id/btn_firstSetting3_test"
+        app:layout_constraintEnd_toStartOf="@+id/img_firstSetting3_python"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgv_firstSetting3_c" />
+
+    <ImageView
+        android:id="@+id/img_firstSetting3_python"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/python_img"
+        app:layout_constraintBottom_toTopOf="@+id/btn_firstSetting3_test"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgv_firstSetting3_java"
+        app:layout_constraintTop_toBottomOf="@+id/imgv_firstSetting3_cplus" />
+
+    <android.widget.Button
+        android:id="@+id/btn_firstSetting3_test"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/intro_login_button_background"
+        android:text="테스트 시작하기"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btn_firstSetting3_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/btn_firstSetting3_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="다음에하기"
+        android:background="#00FFFFFF"
+        android:textColor="#585858"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

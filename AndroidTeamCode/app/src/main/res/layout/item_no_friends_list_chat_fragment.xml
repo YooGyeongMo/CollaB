@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@+id/iv_no_profile_friends_pic_border"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/mainBg2"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/iv_no_profile_friends_pic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/male_avatar" />
+
+    </FrameLayout>
+    <TextView
+        android:id="@+id/tv_no_friends_list_item_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="친구 목록이 비었습니다."
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/iv_no_profile_friends_pic_border"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="10dp"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

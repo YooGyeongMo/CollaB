@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FCFC"
+    tools:context="com.gmlab.team_benew.auth.register.screens.Register2Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_secondScreen_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="회원가입"
+            android:textColor="#585858"
+            android:textSize="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_secondRegister_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="6dp"
+            android:text="생년월일"
+            android:textColor="#B4B4B4"
+            app:layout_constraintStart_toStartOf="@+id/btn_secondRegister_birthday"
+            app:layout_constraintTop_toTopOf="@+id/btn_secondRegister_birthday"
+            android:elevation="4dp"/>
+
+
+        <android.widget.Button
+            android:id="@+id/btn_secondRegister_birthday"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/register_edit_text_background"
+            android:ems="17"
+            android:gravity="start|bottom"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:paddingBottom="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_secondScreen_title" />
+
+        <EditText
+            android:id="@+id/et_secondRegister_phone"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/register_edit_text_background"
+            android:ems="17"
+            android:gravity="start|bottom"
+            android:inputType="phone"
+            android:maxLength="13"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:paddingBottom="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_secondRegister_birthday" />
+
+        <TextView
+            android:id="@+id/tv_secondRegister_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="6dp"
+            android:text="전화번호"
+            android:textColor="#B4B4B4"
+            app:layout_constraintStart_toStartOf="@+id/et_secondRegister_phone"
+            app:layout_constraintTop_toTopOf="@+id/et_secondRegister_phone" />
+
+        <android.widget.Button
+            android:id="@+id/btn_secondScreen_next"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/intro_login_button_background"
+            android:text="확인"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rg_secondRegister_major" />
+
+        <RadioGroup
+            android:id="@+id/rg_secondRegister_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal"
+            android:padding="14dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_secondRegister_gender"
+            app:layout_constraintTop_toBottomOf="@+id/et_secondRegister_phone">
+
+            <RadioButton
+                android:id="@+id/rb_secondRegister_male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_register_left"
+                android:button="@null"
+                android:gravity="center"
+                android:text="남"
+                android:textColor="@drawable/selector_register_text" />
+
+            <RadioButton
+                android:id="@+id/rb_secondRegister_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_register_right"
+                android:button="@null"
+                android:gravity="center"
+                android:text="여"
+                android:textColor="@drawable/selector_register_text" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_secondRegister_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성별"
+            android:textColor="#B4B4B4"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/rg_secondRegister_gender"
+            app:layout_constraintStart_toStartOf="@+id/et_secondRegister_phone"
+            app:layout_constraintTop_toTopOf="@+id/rg_secondRegister_gender" />
+
+        <TextView
+            android:id="@+id/tv_secondRegister_major"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전공"
+            android:textColor="#B4B4B4"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/rg_secondRegister_major"
+            app:layout_constraintStart_toStartOf="@+id/tv_secondRegister_gender"
+            app:layout_constraintTop_toTopOf="@+id/rg_secondRegister_major" />
+
+        <RadioGroup
+            android:id="@+id/rg_secondRegister_major"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal"
+            android:padding="14dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_secondRegister_major"
+            app:layout_constraintTop_toBottomOf="@+id/rg_secondRegister_gender">
+
+            <RadioButton
+                android:id="@+id/rb_secondRegister_true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_register_left"
+                android:button="@null"
+                android:gravity="center"
+                android:text="전공"
+                android:textColor="@drawable/selector_register_text" />
+
+            <RadioButton
+                android:id="@+id/rb_secondRegister_false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_register_right"
+                android:button="@null"
+                android:gravity="center"
+                android:text="비전공"
+                android:textColor="@drawable/selector_register_text" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_secondRegister_genderCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#B4B4B4"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_secondRegister_gender"
+            app:layout_constraintStart_toEndOf="@+id/rg_secondRegister_gender" />
+
+        <TextView
+            android:id="@+id/tv_secondRegister_majorCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#B4B4B4"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_secondRegister_major"
+            app:layout_constraintStart_toEndOf="@+id/rg_secondRegister_major" />
+
+        <android.widget.Button
+            android:id="@+id/btn_secondRegister_phoneCheck"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/intro_login_button_background"
+            android:text="중복체크"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/et_secondRegister_phone"
+            app:layout_constraintEnd_toEndOf="@+id/et_secondRegister_phone"
+            app:layout_constraintTop_toTopOf="@+id/et_secondRegister_phone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

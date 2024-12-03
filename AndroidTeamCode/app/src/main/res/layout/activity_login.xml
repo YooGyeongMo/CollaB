@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loginRootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBg2"
+    android:fitsSystemWindows="true"
+    >
+    <ImageView
+        android:id="@+id/login_backtab"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/backtab"/>
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_background_login_"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/register_bg_1"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        />-->
+
+    <ImageView
+        android:id="@+id/iv_login_title"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/new_logo"
+        app:layout_constraintBottom_toBottomOf="@id/ti_login_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/iv_login_title_txt"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/iv_login_title"
+        app:layout_constraintStart_toStartOf="@id/iv_login_title"
+        app:layout_constraintEnd_toEndOf="@id/iv_login_title"
+        android:src="@drawable/new_logo_txt3"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_login_id"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="아이디"
+        android:padding="2dp"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toTopOf="@id/ti_login_pw"
+        app:layout_constraintEnd_toEndOf="@id/iv_login_title"
+        app:layout_constraintStart_toStartOf="@id/iv_login_title"
+        app:layout_constraintTop_toBottomOf="@id/iv_login_title"
+        app:boxBackgroundColor="@color/mainNewBg"
+        app:boxStrokeColor="@color/mainBlue2"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="1dp"
+        app:hintTextColor="@color/mainBlue2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tet_login_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textAppearance="@style/TextLabel"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_login_pw"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호"
+        android:padding="2dp"
+        app:endIconMode="password_toggle"
+        app:layout_constraintTop_toBottomOf="@id/ti_login_id"
+        app:layout_constraintEnd_toEndOf="@id/ti_login_id"
+        app:layout_constraintStart_toStartOf="@id/ti_login_id"
+        app:boxBackgroundColor="@color/mainNewBg"
+        app:boxStrokeColor="@color/mainBlue2"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="1dp"
+        app:hintTextColor="@color/mainBlue2"
+
+       >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tet_login_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:textAppearance="@style/TextLabel"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login_login"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="로그인"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg"
+        app:layout_constraintEnd_toEndOf="@id/ti_login_pw"
+        app:layout_constraintStart_toStartOf="@id/ti_login_pw"
+        app:layout_constraintTop_toBottomOf="@id/ti_login_pw"
+        />
+
+    <TextView
+        android:id="@+id/tv_login_find_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디 찾기"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/btn_login_login"
+        app:layout_constraintStart_toStartOf="@id/btn_login_login"
+        app:layout_constraintEnd_toStartOf="@id/tv_login_find_pw"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_login_find_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 찾기"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/btn_login_login"
+        app:layout_constraintEnd_toEndOf="@id/btn_login_login"
+        app:layout_constraintStart_toEndOf="@id/tv_login_find_id"
+        android:padding="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_kakao_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="카카오톡으로 시작하기"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@drawable/btn_kakao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_login_find_id"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_naver_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="네이버로 시작하기"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_naver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_kakao_login"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_google_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="Google로 시작하기"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@drawable/btn_google"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_naver_login"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

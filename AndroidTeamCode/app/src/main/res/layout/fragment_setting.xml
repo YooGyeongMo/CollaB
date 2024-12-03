@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_setting_introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="팀원들과 이어주는\nCollaB와 함께하세요!"
+        android:textSize="26dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_setting_logout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/btn_setting_logout"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/logout_button"
+        android:text="로그아웃"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/linear_setting_linear"
+        app:layout_constraintStart_toStartOf="@+id/linear_setting_linear"
+        app:layout_constraintTop_toBottomOf="@+id/tv_setting_introduce" />
+
+    <LinearLayout
+        android:id="@+id/linear_setting_linear"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/mainBg2"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_setting_logout">
+
+        <android.widget.Button
+            android:id="@+id/btn_setting_announcement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:gravity="start|center"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="공지사항" />
+
+        <android.widget.Button
+            android:id="@+id/btn_setting_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:gravity="start|center"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="자주하는 질문" />
+
+        <android.widget.Button
+            android:id="@+id/btn_setting_appSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:gravity="start|center"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="앱 설정" />
+
+        <android.widget.Button
+            android:id="@+id/btn_setting_inquiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:gravity="start|center"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="문의하기" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

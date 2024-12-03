@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/project_detail_nested_scroll_view">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/project_detail_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_project_title_name_of_detail_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/tv_project_title_name_of_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="상세 프로젝트 이름"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_project_kind_of_detail_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="캡스톤 / 앱 개발"
+            android:textColor="@color/mainFont2"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@id/cl_project_title_name_of_detail_border"
+            app:layout_constraintTop_toBottomOf="@id/cl_project_title_name_of_detail_border" />
+
+        <TextView
+            android:id="@+id/tv_project_team_memeber_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="팀원 리스트"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tv_project_kind_of_detail_data"
+            app:layout_constraintTop_toBottomOf="@id/tv_project_kind_of_detail_data" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager_team_members"
+            android:layout_width="160dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_project_team_memeber_list" />
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/did_project_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:dotsCornerRadius="10dp"
+            app:dotsSize="8sp"
+            app:dotsColor="@color/mainFont2"
+            app:selectedDotColor="@color/mainBlue2"
+            app:layout_constraintTop_toBottomOf="@id/viewPager_team_members"
+            app:layout_constraintStart_toStartOf="@id/viewPager_team_members"
+            app:layout_constraintEnd_toEndOf="@id/viewPager_team_members"
+            android:layout_marginBottom="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_project_team_memeber_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="팀원 수"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_project_team_memeber_list"
+            app:layout_constraintTop_toBottomOf="@id/tv_project_kind_of_detail_data"
+            android:layout_marginStart="120dp"/>
+
+        <TextView
+            android:id="@+id/tv_project_team_memeber_count_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="1명"
+            android:textColor="@color/mainFont2"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_project_team_memeber_count"
+            app:layout_constraintStart_toStartOf="@id/tv_project_team_memeber_count"
+            />
+
+        <View
+            android:id="@+id/v_project_detail_bottom_stackBar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/mainBg3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewPager_team_members" />
+
+        <TextView
+            android:id="@+id/tv_project_detail_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="프로젝트 시작일"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tv_project_team_memeber_list"
+            app:layout_constraintTop_toBottomOf="@id/v_project_detail_bottom_stackBar"
+            />
+
+        <TextView
+            android:id="@+id/tv_project_detail_start_date_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="yyyy-mm-dd"
+            android:textColor="@color/mainFont2"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@id/tv_project_detail_start_date"
+            app:layout_constraintTop_toBottomOf="@id/tv_project_detail_start_date" />
+
+        <TextView
+            android:id="@+id/tv_project_detail_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="프로젝트 종료 예정일"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tv_project_detail_start_date_data"
+            app:layout_constraintTop_toBottomOf="@id/tv_project_detail_start_date_data" />
+
+        <TextView
+            android:id="@+id/tv_project_detail_end_date_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="yyyy-mm-dd"
+            android:textColor="@color/mainFont2"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@id/tv_project_detail_end_date"
+            app:layout_constraintTop_toBottomOf="@id/tv_project_detail_end_date" />
+
+        <TextView
+            android:id="@+id/tv_project_detail_summary_introduction_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="프로젝트 요약"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tv_project_detail_end_date_data"
+            app:layout_constraintTop_toBottomOf="@id/tv_project_detail_end_date_data" />
+
+        <TextView
+            android:id="@+id/tv_project_detail_summary_introduction_info_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="프로젝트 요약"
+            android:textColor="@color/mainFont2"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@id/tv_project_detail_summary_introduction_info"
+            app:layout_constraintTop_toBottomOf="@id/tv_project_detail_summary_introduction_info" />
+
+        <TextView
+            android:id="@+id/tv_project_detail_explain_introduction_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="프로젝트 설명"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tv_project_detail_summary_introduction_info_data"
+            app:layout_constraintTop_toBottomOf="@id/tv_project_detail_summary_introduction_info_data" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/scrollView_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_project_detail_explain_introduction_info"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_project_detail_explain_introduction_info">
+
+            <TextView
+                android:id="@+id/tv_project_detail_explain_introduction_info_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="프로젝트 자세한 설명"
+                android:textColor="@color/mainFont2"
+                android:textSize="15sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_project_detail_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="프로젝트 진행률"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tv_project_detail_explain_introduction_info"
+            app:layout_constraintTop_toBottomOf="@id/scrollView_border" />
+
+        <ProgressBar
+            android:id="@+id/pb_project_detail_state_data"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="20dp"
+            android:progress="78"
+            android:max="100"
+            app:layout_constraintTop_toBottomOf="@id/tv_project_detail_percentage"
+            app:layout_constraintStart_toStartOf="@id/tv_project_detail_percentage"
+            app:layout_constraintEnd_toEndOf="@id/tv_project_detail_percentage"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:progressDrawable="@drawable/progress_bar_states_project_detail"/>
+
+        <View
+            android:id="@+id/v_project_detail_bottom_stackBar_2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="100dp"
+            android:background="@color/mainBg2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pb_project_detail_state_data"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+        <ProgressBar
+            android:id="@+id/project_detail_loading_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:theme="@style/Progressbar_color_under_api21"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_project_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/v_project_detail_bottom_stackBar"
+            android:background="@drawable/button_bg"
+            android:text="프로젝트 마감일 정하기"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_project_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/v_project_detail_bottom_stackBar"
+            android:background="@drawable/button_bg"
+            android:text="프로젝트 종료하기"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="1000dp" /> <!-- 이 부분에서 모서리의 반지름을 설정합니다. -->
+    <solid android:color="#3D72FF" /><!-- 배경색을 설정합니다. -->
+    <stroke
+        android:width="2dp"
+    android:color="#3D72FF" />
+</shape>
