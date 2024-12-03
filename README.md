@@ -77,7 +77,7 @@ GitHub, Jira, Notion 등 **다양한 협업 도구 통합**으로 프로젝트 �
 ## 🔎 개발 동기
 
 IT 분야에서 **프로젝트 경험 부족**과 **팀 구성의 어려움**은 학생들이 취업 경쟁력을 갖추는 데 주요한 걸림돌로 작용하고 있습니다.  
-설문 조사 결과, **전국 10여 개 대학교의 IT 직무 취업을 희망하는 200여 명의 대학생**을 대상으로 조사한 결과,  
+설문 조사 결과, **전국 10여 개 대학교의 IT 직무 취업을 희망하는 여 명의 대학생**을 대상으로 조사한 결과,  
 약 **43.9%**의 학생들이 팀원 모집의 어려움으로 프로젝트를 시작하지 못하고 있는 것으로 나타났습니다.  
 이는 IT 취업 시장에서 **협업 도구와 소통 능력 부족**으로 이어지고 있습니다.
 
@@ -213,55 +213,55 @@ CollaB는 이러한 문제를 해결하기 위해 기획되었습니다. **프�
   <tr>
     <td align="center">
       <h3>시작 화면</h3>
-      <img src="./assets/시작화면.gif" alt="Main Screen GIF" height="200">
+      <img src="./assets/시작화면.gif" alt="Main Screen GIF" height="300">
     </td>
     <td align="center">
       <h3>회원가입 온보딩</h3>
-      <img src="./assets/회원가입.gif" alt="Project Matching GIF" height="200">
+      <img src="./assets/회원가입.gif" alt="Project Matching GIF" height="300">
     </td>
     <td align="center">
       <h3>자동 로그인</h3>
-      <img src="./assets/로그인.gif" alt="Chat Screen GIF" height="200">
+      <img src="./assets/로그인.gif" alt="Chat Screen GIF" height="300">
     </td>
     <td align="center">
       <h3>최초 온보딩, 코딩테스트</h3>
-      <img src="./assets/최초 온보딩.gif" alt="Extra Screen GIF" height="200">
+      <img src="./assets/최초 온보딩.gif" alt="Extra Screen GIF" height="300">
     </td>
   </tr>
   <tr>
     <td align="center">
       <h3>홈 화면</h3>
-      <img src="./assets/홈화면2.gif" alt="Main Screen GIF" height="200">
+      <img src="./assets/홈화면2.gif" alt="Main Screen GIF" height="300">
     </td>
     <td align="center">
       <h3>프로젝트 시작</h3>
-      <img src="./assets/프로젝트 전개.gif" alt="Project Matching GIF" height="200">
+      <img src="./assets/프로젝트 전개.gif" alt="Project Matching GIF" height="300">
     </td>
     <td align="center">
       <h3>팀원 구하기(매칭)</h3>
-      <img src="./assets/매칭.gif" alt="Chat Screen GIF" height="200">
+      <img src="./assets/매칭.gif" alt="Chat Screen GIF" height="300">
     </td>
     <td align="center">
       <h3>팀원 요청을 받는 사람</h3>
-      <img src="./assets/매칭 당하는사람.gif" alt="Extra Screen GIF" height="200">
+      <img src="./assets/매칭 당하는사람.gif" alt="Extra Screen GIF" height="300">
     </td>
   </tr>
   <tr>
     <td align="center">
       <h3>프로젝트 찾기 및 요청</h3>
-      <img src="./assets/프로젝트 찾고참여 요청.gif" alt="Main Screen GIF" height="200">
+      <img src="./assets/프로젝트 찾고참여 요청.gif" alt="Main Screen GIF" height="300">
     </td>
     <td align="center">
       <h3>친구 추가, 채팅방 초대</h3>
-      <img src="./assets/친구추가.gif" alt="Project Matching GIF" height="200">
+      <img src="./assets/친구추가.gif" alt="Project Matching GIF" height="300">
     </td>
     <td align="center">
       <h3>실시간 채팅 팀원 1</h3>
-      <img src="./assets/사용자1 실시간채팅.gif" alt="Chat Screen GIF" height="200">
+      <img src="./assets/사용자1 실시간채팅.gif" alt="Chat Screen GIF" height="300">
     </td>
     <td align="center">
       <h3>실시간 채팅 팀원 2</h3>
-      <img src="./assets/사용자2 실시간채팅.gif" alt="Extra Screen GIF" height="200">
+      <img src="./assets/사용자2 실시간채팅.gif" alt="Extra Screen GIF" height="300">
     </td>
   </tr>
 </table>

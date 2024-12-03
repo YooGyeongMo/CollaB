@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://demologin2.c8a58wttwocm.ap-northeast-2.rds.amazonaws.com:5432/jwtlogin
+    username: benew
+    password: ehdfyrkehofk
+  redis:
+    host: localhost
+    port: 5432
+
+  mvc: # for swagger
+    path match:
+      matching-strategy:
+        ant_path_matcher
+
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        default_batch_fetch_size: 1000
+    hibernate:
+      ddl-auto: update
+    defer-datasource-initialization: true
+
+jwt:
+  secret:
+    key: x!A%D*G-KaPdSgVkYp3s5v8y/B?E(H+M
+
