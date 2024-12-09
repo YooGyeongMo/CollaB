@@ -223,55 +223,55 @@ CollaB는 이러한 문제를 해결하기 위해 기획되었습니다. **프�
   <tr>
     <td align="center">
       <p>시작 화면</p>
-      <img src="./assets/시작화면.gif" alt="Main Screen GIF" height="450">
+      <img src="./assets/시작화면.gif" alt="Main Screen GIF" height="400">
     </td>
     <td align="center">
       <p>회원가입 온보딩</p>
-      <img src="./assets/회원가입.gif" alt="Project Matching GIF" height="450">
+      <img src="./assets/회원가입.gif" alt="Project Matching GIF" height="400">
     </td>
     <td align="center">
       <p>자동 로그인</p>
-      <img src="./assets/로그인.gif" alt="Chat Screen GIF" height="450">
+      <img src="./assets/로그인.gif" alt="Chat Screen GIF" height="400">
     </td>
     <td align="center">
       <p>최초 온보딩, 코딩테스트</p>
-      <img src="./assets/최초 온보딩.gif" alt="Extra Screen GIF" height="450">
+      <img src="./assets/최초 온보딩.gif" alt="Extra Screen GIF" height="400">
     </td>
   </tr>
   <tr>
     <td align="center">
       <p>홈 화면</p>
-      <img src="./assets/홈화면2.gif" alt="Main Screen GIF" height="450">
+      <img src="./assets/홈화면2.gif" alt="Main Screen GIF" height="400">
     </td>
     <td align="center">
       <p>프로젝트 시작</p>
-      <img src="./assets/프로젝트 전개.gif" alt="Project Matching GIF" height="450">
+      <img src="./assets/프로젝트 전개.gif" alt="Project Matching GIF" height="400">
     </td>
     <td align="center">
       <p>팀원 구하기(매칭)</p>
-      <img src="./assets/매칭.gif" alt="Chat Screen GIF" height="450">
+      <img src="./assets/매칭.gif" alt="Chat Screen GIF" height="400">
     </td>
     <td align="center">
       <p>팀원 요청을 받는 사람</p>
-      <img src="./assets/매칭 당하는사람.gif" alt="Extra Screen GIF" height="450">
+      <img src="./assets/매칭 당하는사람.gif" alt="Extra Screen GIF" height="400">
     </td>
   </tr>
   <tr>
     <td align="center">
       <p>프로젝트 찾기 및 요청</p>
-      <img src="./assets/프로젝트 찾고참여 요청.gif" alt="Main Screen GIF" height="450">
+      <img src="./assets/프로젝트 찾고참여 요청.gif" alt="Main Screen GIF" height="400">
     </td>
     <td align="center">
       <p>친구 추가, 채팅방 초대</p>
-      <img src="./assets/친구추가.gif" alt="Project Matching GIF" height="450">
+      <img src="./assets/친구추가.gif" alt="Project Matching GIF" height="400">
     </td>
     <td align="center">
       <p>실시간 채팅 팀원 1</p>
-      <img src="./assets/사용자1 실시간채팅.gif" alt="Chat Screen GIF" height="450">
+      <img src="./assets/사용자1 실시간채팅.gif" alt="Chat Screen GIF" height="400">
     </td>
     <td align="center">
       <p>실시간 채팅 팀원 2</p>
-      <img src="./assets/사용자2 실시간채팅.gif" alt="Extra Screen GIF" height="450">
+      <img src="./assets/사용자2 실시간채팅.gif" alt="Extra Screen GIF" height="400">
     </td>
   </tr>
 </table>
