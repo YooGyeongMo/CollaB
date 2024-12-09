@@ -301,6 +301,180 @@ CollaB는 이러한 문제를 해결하기 위해 기획되었습니다. **프�
 - 현재는 서버를 닫아두어 AWS 도메인에서 localhost로 수정했습니다.
 - http://localhost:8080/swagger-ui/index.html#/
 - 아래의 API들은 각 기능별 API중 2개씩 예시를 들었습니다.
+## 사용자 인증
+- **`POST /login`**  
+  - **설명**: 사용자 로그인.  
+  - **요청**:
+    ```json
+    {
+      "account": "testuser",
+      "password": "password123"
+    }
+    ```
+  - **응답**:
+    ```json
+    {
+      "token": "jwt_token",
+      "roles": ["ROLE_USER"]
+    }
+    ```
+
+- **`POST /register`**  
+  - **설명**: 사용자 회원가입.  
+  - **요청**:
+    ```json
+    {
+      "account": "newuser",
+      "password": "password123",
+      "email": "newuser@example.com"
+    }
+    ```
+  - **응답**:
+    ```json
+    {
+      "message": "User registered successfully."
+    }
+    ```
+
+---
+
+## 알람 관리
+- **`GET /alarms`**  
+  - **설명**: 현재 사용자의 알림 목록 조회.  
+  - **응답**:
+    ```json
+    [
+      {
+        "id": 1,
+        "message": "You have a new friend request.",
+        "timestamp": "2024-11-13T10:30:00",
+        "isRead": false
+      }
+    ]
+    ```
+
+- **`POST /alarms`**  
+  - **설명**: 새로운 알림 생성.  
+  - **요청**:
+    ```json
+    {
+      "receiverUserId": 101,
+      "senderUserId": 102,
+      "message": "You have a new message."
+    }
+    ```
+  - **응답**:
+    ```json
+    {
+      "id": 1,
+      "message": "You have a new message.",
+      "timestamp": "2024-11-13T10:30:00",
+      "isRead": false
+    }
+    ```
+
+---
+
+## 프로필 관리
+- **`GET /profile`**  
+  - **설명**: 현재 사용자의 프로필 정보 조회.  
+  - **응답**:
+    ```json
+    {
+      "id": 1,
+      "nickname": "testuser",
+      "instruction": "Software Engineer",
+      "role": "Developer"
+    }
+    ```
+
+- **`PUT /profile`**  
+  - **설명**: 사용자 프로필 업데이트.  
+  - **요청**:
+    ```json
+    {
+      "nickname": "Updated User",
+      "instruction": "Experienced Developer",
+      "role": "Tech Lead"
+    }
+    ```
+  - **응답**:
+    ```json
+    {
+      "message": "Profile updated successfully."
+    }
+    ```
+
+---
+
+## 친구 관리
+- **`GET /friend/list`**  
+  - **설명**: 친구 목록 조회.  
+  - **응답**:
+    ```json
+    [
+      {
+        "id": 1,
+        "memberId": 101,
+        "friendId": 102,
+        "status": "accepted"
+      }
+    ]
+    ```
+
+- **`POST /friend/add`**  
+  - **설명**: 친구 추가 요청.  
+  - **요청**:
+    ```json
+    {
+      "memberId": 101,
+      "friendId": 102
+    }
+    ```
+  - **응답**:
+    ```json
+    {
+      "id": 1,
+      "status": "pending"
+    }
+    ```
+
+---
+
+## 기술 및 레벨 관리
+- **`POST /technology`**  
+  - **설명**: 새로운 기술 추가.  
+  - **요청**:
+    ```json
+    {
+      "name": "Java"
+    }
+    ```
+  - **응답**:
+    ```json
+    {
+      "id": 1,
+      "name": "Java"
+    }
+    ```
+
+- **`POST /technology-level`**  
+  - **설명**: 특정 기술 레벨 추가.  
+  - **요청**:
+    ```json
+    {
+      "technologyId": 1,
+      "level": 3
+    }
+    ```
+  - **응답**:
+    ```json
+    {
+      "id": 1,
+      "technologyId": 1,
+      "level": 3
+    }
+    ```
 
 ## 채팅
 
