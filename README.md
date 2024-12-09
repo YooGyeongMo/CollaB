@@ -89,11 +89,11 @@ IT 분야에서 **프로젝트 경험 부족**과 **팀 구성의 어려움**은
 
 **프로젝트 경험자**
 
-<img src="./assets/설문조사1.png" alt="Survey Results" width="450">
+<img src="./assets/설문조사1.png" alt="Survey Results" width="500">
 
 **프로젝트 미경험자**
 
-<img src="./assets/설문조사2.png" alt="Survey Results" width="450">
+<img src="./assets/설문조사2.png" alt="Survey Results" width="500">
 
 ### 해결 방안
 
@@ -103,7 +103,7 @@ IT 분야에서 **프로젝트 경험 부족**과 **팀 구성의 어려움**은
 
 ### 서비스 런칭 시 의견
 
-<img src="./assets/서비스런칭.png" alt="Survey Results" width="450">
+<img src="./assets/서비스런칭.png" alt="Survey Results" width="500">
 
 CollaB는 이러한 문제를 해결하기 위해 기획되었습니다. **프로젝트 매칭 시스템**, **통합 협업 도구**, **실시간 소통 기능**을 통해 학생들이 팀 구성 및 프로젝트 진행에서 겪는 어려움을 해소하고자
 합니다.
